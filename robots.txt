@@ -17,5 +17,5 @@ Allow: /
 User-agent: PerplexityBot
 Allow: /
 
-# Replace YOUR_DOMAIN with your actual domain
-Sitemap: https://YOUR_DOMAIN/sitemap.xml
+# Replace skusvv.github.io/garmin-apps with your actual domain
+Sitemap: https://skusvv.github.io/garmin-apps/sitemap.xml
