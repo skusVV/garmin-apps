@@ -84,3 +84,20 @@ footer a:hover { color: var(--text); text-decoration: none; }
   .apps-grid { grid-template-columns: 1fr; }
   .app-header { flex-direction: column; }
 }
+
+/* ── FAQ ── */
+.faq { margin: 32px 0; }
+.faq > h3 { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); margin-bottom: 14px; }
+.faq-item { border-bottom: 1px solid var(--border); padding: 16px 0; }
+.faq-item:last-child { border-bottom: none; }
+.faq-item h4 { font-size: 0.9rem; font-weight: 600; color: var(--text); margin-bottom: 8px; }
+.faq-item p { font-size: 0.875rem; color: var(--muted); line-height: 1.6; }
+
+/* ── Disclaimer ── */
+.disclaimer-box { border-left: 3px solid var(--border); padding: 12px 16px; margin: 24px 0; font-size: 0.8rem; color: var(--muted); line-height: 1.6; font-style: italic; }
+
+/* ── Numbered install steps ── */
+.features ol { list-style: none; counter-reset: install-step; }
+.features ol li { counter-increment: install-step; display: flex; gap: 10px; padding: 8px 0; border-bottom: 1px solid var(--border); font-size: 0.9rem; color: var(--text); }
+.features ol li::before { content: counter(install-step) "."; color: var(--accent); flex-shrink: 0; font-weight: 700; min-width: 22px; }
+.features ol li:last-child { border-bottom: none; }

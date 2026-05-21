@@ -1,0 +1,103 @@
+SEO TODO — Tasks blocked on missing assets or external actions
+=================================================================
+
+IMAGES (blocked: no screenshots available yet)
+-----------------------------------------------
+For each app page, add:
+  1. A screenshot image file, e.g.:
+       /assets/fasting-tracker-garmin-screenshot.png
+       /assets/ai-coach-garmin-screenshot.png
+       /assets/uv-guard-garmin-screenshot.png
+       /assets/outdoor-readiness-garmin-screenshot.png
+       /assets/pollen-pulse-garmin-screenshot.png
+       /assets/posture-pal-garmin-screenshot.png
+       /assets/20-20-20-garmin-screenshot.png
+       /assets/headache-log-garmin-screenshot.png
+       /assets/symptom-tracker-garmin-screenshot.png
+       /assets/cold-plunge-garmin-screenshot.png
+       /assets/dead-hang-garmin-screenshot.png
+  2. An OG image (1200x630px), e.g.:
+       /assets/fasting-tracker-og.png
+  3. Add to each app page's <head>:
+       <meta property="og:image" content="https://skusvv.github.io/garmin-apps/assets/[app]-og.png">
+       <meta name="twitter:card" content="summary_large_image">
+       <meta name="twitter:image" content="https://skusvv.github.io/garmin-apps/assets/[app]-og.png">
+  4. Add to each app page's <main> an image element with descriptive alt text:
+       <figure>
+         <img src="../assets/fasting-tracker-garmin-screenshot.png"
+              alt="Fasting Tracker intermittent fasting widget running on a Garmin watch"
+              width="390" height="390" loading="lazy">
+         <figcaption>Fasting Tracker showing a 16:8 fast in progress with phase arc.</figcaption>
+       </figure>
+  5. Add to JSON-LD "image" property:
+       "image": "https://skusvv.github.io/garmin-apps/assets/fasting-tracker-og.png"
+
+GITHUB REPOSITORY METADATA (blocked: requires GitHub web UI / gh CLI with auth)
+---------------------------------------------------------------------------------
+  1. Go to https://github.com/skusVV/garmin-apps
+  2. Click the gear icon next to "About"
+  3. Set Description:
+       "Landing pages for Garmin Connect IQ apps by Vitalii Skus —
+        health, fitness, outdoor, fasting, wellness, and productivity
+        widgets for Garmin watches."
+  4. Set Website: https://skusvv.github.io/garmin-apps/
+  5. Add Topics:
+       garmin, connect-iq, garmin-connect-iq, garmin-watch, garmin-apps,
+       fasting-tracker, intermittent-fasting, health, fitness, widgets,
+       pollen, uv-index, posture, eye-strain, cold-plunge, grip-strength
+
+ROOT robots.txt (blocked: requires a separate GitHub repo)
+------------------------------------------------------------
+  1. Create a new GitHub repository named exactly: skusvv.github.io
+  2. In that repo, create robots.txt at the root with:
+       User-agent: *
+       Allow: /
+
+       User-agent: OAI-SearchBot
+       Allow: /
+
+       User-agent: ChatGPT-User
+       Allow: /
+
+       User-agent: GPTBot
+       Allow: /
+
+       User-agent: ClaudeBot
+       Allow: /
+
+       User-agent: anthropic-ai
+       Allow: /
+
+       User-agent: Google-Extended
+       Allow: /
+
+       User-agent: PerplexityBot
+       Allow: /
+
+       Sitemap: https://skusvv.github.io/garmin-apps/sitemap.xml
+  3. This root robots.txt will be authoritative for ALL GitHub Pages sites
+     under skusvv.github.io.
+
+SEARCH CONSOLE / WEBMASTER TOOLS
+----------------------------------
+  1. Submit sitemap manually in Google Search Console:
+       https://search.google.com/search-console
+       Property: https://skusvv.github.io/garmin-apps/
+       Sitemap URL: https://skusvv.github.io/garmin-apps/sitemap.xml
+  2. Submit sitemap in Bing Webmaster Tools:
+       https://www.bing.com/webmasters/
+       Sitemap URL: https://skusvv.github.io/garmin-apps/sitemap.xml
+  3. Verify ownership in both tools for click / impression data.
+
+COLD PLUNGE PRO — PRICE / TRIAL MISSING
+-----------------------------------------
+  The cold-plunge.html page was created without price and trial info.
+  Once confirmed, add to sidebar-card store-meta:
+    <p><strong>Price:</strong> $X.XX (one-time)</p>
+    <p><strong>Trial:</strong> Free for Xh / X days</p>
+  Also update JSON-LD "offers" with "price" and "priceCurrency".
+
+UV GUARD — EXACT PRICE MISSING
+--------------------------------
+  uv-index.html lists "One-time purchase" without a dollar amount.
+  Confirm the price and update both the sidebar-card and JSON-LD offers.

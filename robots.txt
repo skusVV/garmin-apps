@@ -1,21 +1,49 @@
+# NOTE: This file is served at https://skusvv.github.io/garmin-apps/robots.txt
+# For GitHub Pages project sites (not root sites), robots.txt is only authoritative
+# at the host root: https://skusvv.github.io/robots.txt
+# This file is kept for documentation and for crawlers that check the project path.
+#
+# To make robots.txt fully authoritative:
+#   Option A: Create a separate repo named "skusvv.github.io" and place robots.txt there.
+#   Option B: Submit sitemap.xml manually in Google Search Console and Bing Webmaster Tools.
+#
+# CHATGPT SEARCH vs OPENAI TRAINING:
+#   The config below allows all crawlers including ChatGPT Search (OAI-SearchBot)
+#   and OpenAI training (GPTBot). To allow ChatGPT Search but block training, use:
+#     User-agent: GPTBot
+#     Disallow: /
+#   and keep OAI-SearchBot and ChatGPT-User as Allow: /
+
 User-agent: *
 Allow: /
 
-# AI crawlers — explicitly welcome
+# OpenAI — search surfacing and training
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
 User-agent: GPTBot
 Allow: /
 
+# Anthropic
 User-agent: ClaudeBot
 Allow: /
 
 User-agent: anthropic-ai
 Allow: /
 
+# Google AI
 User-agent: Google-Extended
 Allow: /
 
+# Perplexity
 User-agent: PerplexityBot
 Allow: /
 
-# Replace skusvv.github.io/garmin-apps with your actual domain
+# Bing
+User-agent: Bingbot
+Allow: /
+
 Sitemap: https://skusvv.github.io/garmin-apps/sitemap.xml
