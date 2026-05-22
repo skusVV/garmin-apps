@@ -102,11 +102,9 @@ footer a:hover { color: var(--text); text-decoration: none; }
 .features ol li::before { content: counter(install-step) "."; color: var(--accent); flex-shrink: 0; font-weight: 700; min-width: 22px; }
 .features ol li:last-child { border-bottom: none; }
 
-/* ── Screenshot gallery ── */
-.gallery { margin-bottom: 40px; }
-.gallery-main { position: relative; background: var(--surface); border: 1px solid var(--border); border-radius: 14px; overflow: hidden; display: flex; align-items: center; justify-content: center; height: 380px; margin-bottom: 10px; }
-.gallery-main img { max-height: 100%; max-width: 100%; object-fit: contain; display: block; transition: opacity 0.2s ease; }
-.gallery-thumbs { display: flex; gap: 8px; }
-.gallery-thumbs img { flex: 1; min-width: 0; height: 72px; object-fit: cover; object-position: center top; border-radius: 8px; border: 2px solid var(--border); cursor: pointer; transition: border-color 0.15s, opacity 0.15s; opacity: 0.55; }
-.gallery-thumbs img:hover { opacity: 0.85; border-color: var(--muted); }
-.gallery-thumbs img.active { border-color: var(--accent); opacity: 1; }
+/* ── Screenshots strip ── */
+.screenshots { display: flex; gap: 12px; overflow-x: auto; padding-bottom: 16px; margin-bottom: 40px; scrollbar-width: thin; scrollbar-color: var(--border) transparent; }
+.screenshots::-webkit-scrollbar { height: 4px; }
+.screenshots::-webkit-scrollbar-track { background: transparent; }
+.screenshots::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+.screenshots img { height: 320px; width: auto; border-radius: 10px; border: 1px solid var(--border); flex-shrink: 0; display: block; }
