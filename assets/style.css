@@ -101,3 +101,10 @@ footer a:hover { color: var(--text); text-decoration: none; }
 .features ol li { counter-increment: install-step; display: flex; gap: 10px; padding: 8px 0; border-bottom: 1px solid var(--border); font-size: 0.9rem; color: var(--text); }
 .features ol li::before { content: counter(install-step) "."; color: var(--accent); flex-shrink: 0; font-weight: 700; min-width: 22px; }
 .features ol li:last-child { border-bottom: none; }
+
+/* ── Screenshots strip ── */
+.screenshots { display: flex; gap: 12px; overflow-x: auto; padding-bottom: 16px; margin-bottom: 40px; scrollbar-width: thin; scrollbar-color: var(--border) transparent; }
+.screenshots::-webkit-scrollbar { height: 4px; }
+.screenshots::-webkit-scrollbar-track { background: transparent; }
+.screenshots::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+.screenshots img { height: 320px; width: auto; border-radius: 10px; border: 1px solid var(--border); flex-shrink: 0; display: block; }
