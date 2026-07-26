@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this is
 
-A static, hand-written HTML marketing site for 12 Garmin Connect IQ apps by Vitalii Skus. No build step, no framework, no package manager, no tests. Files are served verbatim by GitHub Pages.
+A static, hand-written HTML marketing site for 13 Garmin Connect IQ apps by Vitalii Skus. No build step, no framework, no package manager, no tests. Files are served verbatim by GitHub Pages.
 
 - Repo: `github.com/skusVV/garmin-apps`
 - Live base URL: `https://skusvv.github.io/garmin-apps/` (a GitHub Pages **project** site, so every page lives under the `/garmin-apps/` path prefix)
@@ -26,6 +26,8 @@ Deploy = commit and push to `main`. GitHub Pages publishes from the repo root.
 - [apps/](apps/) - one detail page per app, all following the same template (see below)
 - [assets/style.css](assets/style.css) - the single stylesheet for the whole site. Dark theme driven by CSS custom properties on `:root` (`--bg`, `--surface`, `--border`, `--text`, `--muted`, `--accent`). No other CSS exists anywhere.
 - [sitemap.xml](sitemap.xml), [robots.txt](robots.txt) - hand-maintained
+- [scripts/fetch-garmin-app.py](scripts/fetch-garmin-app.py) - fetches a store listing as normalised JSON and, with `--compare <page>`, reports which page fields have drifted from the store. Stdlib only, no dependencies.
+- [.claude/skills/sync-garmin-apps/SKILL.md](.claude/skills/sync-garmin-apps/SKILL.md) - the `sync-garmin-apps` skill that drives the fetch-and-rewrite process
 - [todo.txt](todo.txt) - a running list of SEO work blocked on missing assets or external actions (Search Console submission, GitHub repo metadata, missing prices). Read it before doing SEO work; update it when an item is unblocked.
 
 ## The app detail page template
@@ -81,3 +83,7 @@ The published Connect IQ apps this site represents. [scripts/apps-registry.json]
 | Barre Workout Tracker | <https://apps.garmin.com/apps/3a2f8a80-f322-4f9b-af2f-ca070f94e380> |
 | Qigong | <https://apps.garmin.com/apps/7919285f-c517-46b8-9b4e-b60bd25ff47d> |
 | Reading | <https://apps.garmin.com/apps/1b9caed2-ad53-46bf-b24b-3ca276ffca7f> |
+| Posture Pal: Smart Reminders | <https://apps.garmin.com/apps/58a6318f-8669-4561-8017-53217972d18d> |
+| Headache Log | <https://apps.garmin.com/apps/92f9721c-a906-4517-a0cd-cba4412036b2> |
+| Symptom Tracker | <https://apps.garmin.com/apps/8de4ab53-66c8-431b-9914-27658771a1d3> |
+| Dead Hang Pro \| Hands-Free Grip Timer | <https://apps.garmin.com/apps/4f498f82-167f-41a7-8623-ad3add1e43d6> |
