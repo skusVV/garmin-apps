@@ -88,16 +88,3 @@ SEARCH CONSOLE / WEBMASTER TOOLS
        https://www.bing.com/webmasters/
        Sitemap URL: https://skusvv.github.io/garmin-apps/sitemap.xml
   3. Verify ownership in both tools for click / impression data.
-
-COLD PLUNGE PRO — PRICE / TRIAL MISSING
------------------------------------------
-  The cold-plunge.html page was created without price and trial info.
-  Once confirmed, add to sidebar-card store-meta:
-    <p><strong>Price:</strong> $X.XX (one-time)</p>
-    <p><strong>Trial:</strong> Free for Xh / X days</p>
-  Also update JSON-LD "offers" with "price" and "priceCurrency".
-
-UV GUARD — EXACT PRICE MISSING
---------------------------------
-  uv-index.html lists "One-time purchase" without a dollar amount.
-  Confirm the price and update both the sidebar-card and JSON-LD offers.

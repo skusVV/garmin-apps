@@ -1,118 +1,137 @@
 {
-  "_comment": "Source of truth for which store listings this site covers. page=null means no landing page exists yet. Regenerate names with scripts/fetch-garmin-app.py.",
+  "_comment": "Source of truth for which store listings this site covers. page=null means no landing page exists yet. Regenerate names with scripts/fetch-garmin-app.py. kiezelpayProductId is a fixed KiezelPay productId - fetch price/trial with scripts/fetch-kiezelpay-price.py, see .claude/skills/sync-kiezelpay-pricing/.",
   "apps": [
     {
       "id": "34e32f1b-d25f-40ac-9f0f-d473a76c9f9f",
       "name": "Fasting Tracker — IF, Ketosis & Autophagy",
       "type": "Widget",
+      "kiezelpayProductId": 76626,
       "page": "apps/fasting.html"
     },
     {
       "id": "a083e371-7c25-48da-80a1-9d076cc1bf07",
       "name": "AI Coach",
       "type": "Watch App",
+      "kiezelpayProductId": 77415,
       "page": "apps/ai-coach.html"
     },
     {
       "id": "a5637e94-cd1f-42c8-a8e0-6dd707b585ca",
       "name": "Outdoor Readiness — Training Conditions Score",
       "type": "Watch App",
+      "kiezelpayProductId": 77170,
       "page": "apps/outdoor-readiness.html"
     },
     {
       "id": "30652965-1f30-4642-913e-7a29ba74689c",
       "name": "Pollen Pulse — 5-Day Allergy Forecast",
       "type": "Widget",
+      "kiezelpayProductId": 77123,
       "page": "apps/pollen.html"
     },
     {
       "id": "53361df7-5c70-4b1d-8e36-21c1128e95be",
       "name": "UV Guard: Sun & Burn Forecast",
       "type": "Watch App",
+      "kiezelpayProductId": 77435,
       "page": "apps/uv-index.html"
     },
     {
       "id": "58a6318f-8669-4561-8017-53217972d18d",
       "name": "Posture Pal: Smart Reminders",
       "type": "Watch App",
+      "kiezelpayProductId": 75919,
       "page": "apps/posture-pal.html"
     },
     {
       "id": "a806696c-30eb-4008-a00e-f33eaccb4ca6",
       "name": "20-20-20 Eye Saver: Smart Vision Breaks",
       "type": "Widget",
+      "kiezelpayProductId": 76351,
       "page": "apps/20-20-20.html"
     },
     {
       "id": "92f9721c-a906-4517-a0cd-cba4412036b2",
       "name": "Headache Log",
       "type": "Watch App",
+      "kiezelpayProductId": 76933,
       "page": "apps/headache-log.html"
     },
     {
       "id": "8de4ab53-66c8-431b-9914-27658771a1d3",
       "name": "Symptom Tracker",
       "type": "Watch App",
+      "kiezelpayProductId": 77053,
       "page": "apps/symptom-tracker.html"
     },
     {
       "id": "982eb991-005b-4cc8-bda0-aa7807e55094",
       "name": "Cold Plunge Pro: Ice Bath & Shiver Protocol",
       "type": "Watch App",
+      "kiezelpayProductId": 76276,
       "page": "apps/cold-plunge.html"
     },
     {
       "id": "4f498f82-167f-41a7-8623-ad3add1e43d6",
       "name": "Dead Hang Pro | Hands-Free Grip Timer",
       "type": "Watch App",
+      "kiezelpayProductId": 75940,
       "page": "apps/dead-hang.html"
     },
     {
       "id": "cbe6b0ab-b45a-454a-a023-e7973e002901",
       "name": "Tai Chi Tracker",
       "type": "Watch App",
+      "kiezelpayProductId": 77160,
       "page": "apps/tai-chi.html"
     },
     {
       "id": "3fc6ffb6-988b-472e-9644-bbb8f9568868",
       "name": "BJJ (Brazilian Jiu-Jitsu)",
       "type": "Watch App",
+      "kiezelpayProductId": 76576,
       "page": null
     },
     {
       "id": "b855effc-4c62-43c2-a555-06fe7cc96309",
       "name": "Muay Thai",
       "type": "Watch App",
+      "kiezelpayProductId": 76064,
       "page": "apps/muay-thai.html"
     },
     {
       "id": "ea4d6069-5e30-4376-9dfa-287b2e6866da",
-      "name": "Kickboxing Tracker",
+      "name": "Kickboxing Round Timer & Tracker",
       "type": "Watch App",
-      "page": null
+      "kiezelpayProductId": 76495,
+      "page": "apps/kickboxing.html"
     },
     {
       "id": "b157783c-8e0f-40d7-8b81-96640cc7e868",
       "name": "Blood Pressure Journal",
       "type": "Watch App",
-      "page": null
+      "kiezelpayProductId": 77079,
+      "page": "apps/blood-pressure.html"
     },
     {
       "id": "3a2f8a80-f322-4f9b-af2f-ca070f94e380",
       "name": "Barre Workout Tracker",
       "type": "Watch App",
-      "page": null
+      "kiezelpayProductId": 76507,
+      "page": "apps/barre.html"
     },
     {
       "id": "7919285f-c517-46b8-9b4e-b60bd25ff47d",
       "name": "Qigong",
       "type": "Watch App",
+      "kiezelpayProductId": 76094,
       "page": null
     },
     {
       "id": "1b9caed2-ad53-46bf-b24b-3ca276ffca7f",
       "name": "Reading",
       "type": "Watch App",
+      "kiezelpayProductId": 77040,
       "page": null
     }
   ]
