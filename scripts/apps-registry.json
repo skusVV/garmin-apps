@@ -90,7 +90,7 @@
       "name": "BJJ (Brazilian Jiu-Jitsu)",
       "type": "Watch App",
       "kiezelpayProductId": 76576,
-      "page": null
+      "page": "apps/bjj.html"
     },
     {
       "id": "b855effc-4c62-43c2-a555-06fe7cc96309",
@@ -125,7 +125,7 @@
       "name": "Qigong",
       "type": "Watch App",
       "kiezelpayProductId": 76094,
-      "page": null
+      "page": "apps/qigong.html"
     },
     {
       "id": "1b9caed2-ad53-46bf-b24b-3ca276ffca7f",
@@ -133,6 +133,33 @@
       "type": "Watch App",
       "kiezelpayProductId": 77040,
       "page": null
+    },
+    {
+      "id": "a4eccf1c-843d-44c9-b0b2-22864fcd3b7e",
+      "name": "MealGap - Meal Timing & Metabolic Health",
+      "type": "Watch App",
+      "kiezelpayProductId": 76498,
+      "page": "apps/meal-gap.html"
+    },
+    {
+      "id": "77ae0ba4-9c58-4f4a-bbf4-558c438d78ff",
+      "name": "Soccer Tracker",
+      "type": "Watch App",
+      "kiezelpayProductId": 76044,
+      "page": "apps/soccer.html"
+    },
+    {
+      "id": "6faa805c-a622-4bd0-83fa-958e444e0ce3",
+      "name": "ApexRun – Pace, HR Zones & Cadence",
+      "type": "Data Field",
+      "page": "apps/apexrun.html"
+    },
+    {
+      "id": "9e69e8e4-6c97-4b07-9cd3-318491ef496e",
+      "name": "Soft Elegance – Minimalist Fitness & Style",
+      "type": "Watch Face",
+      "kiezelpayProductId": 76328,
+      "page": "apps/soft-elegance.html"
     }
   ]
 }
