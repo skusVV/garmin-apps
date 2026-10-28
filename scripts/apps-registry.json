@@ -160,6 +160,12 @@
       "type": "Watch Face",
       "kiezelpayProductId": 76328,
       "page": "apps/soft-elegance.html"
+    },
+    {
+      "id": "cff40d1e-0d13-4b45-ab14-f5f16380e397",
+      "name": "Lab Plan - Cholesterol, apoB & LDL Journal",
+      "type": "Watch App",
+      "page": "apps/lab-plan.html"
     }
   ]
 }
